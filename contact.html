@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - Thank You Challenge</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/tyc_logo.png" alt="TYC Logo" />
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Programs</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact Us</h1>
+    <p>Use the form below to get in touch — messages are sent via Formspree.</p>
+    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xdkwkeqn" method="POST">
+      <label for="name">Your name</label>
+      <input id="name" name="name" required />
+
+      <label for="email">Your email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Thank You Challenge - All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
