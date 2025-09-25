@@ -90,3 +90,15 @@ window.addEventListener('scroll', () => {
 backToTop.addEventListener('click', () => {
   window.scrollTo({top:0, behavior:'smooth'});
 });
+// Hamburger toggle
+document.addEventListener("DOMContentLoaded", () => {
+  const navToggle = document.getElementById("navToggle");
+  const navList = document.getElementById("navList");
+
+  if (navToggle && navList) {
+    navToggle.addEventListener("click", () => {
+      navList.classList.toggle("show");
+    });
+  }
+});
+

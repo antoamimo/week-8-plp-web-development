@@ -171,3 +171,41 @@ img {
     width: 100%;
   }
 }
+/* Mobile nav hidden by default */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Small screens: hide links, show hamburger */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px; /* below header */
+    right: 20px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1001;
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
