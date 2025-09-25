@@ -186,7 +186,7 @@ img {
   border: none;
 }
 
-/* Small screens: hide links, show hamburger */
+/* Small screens: fixed the hiding hamburger */
 @media (max-width: 768px) {
   .nav-list {
     display: none;
