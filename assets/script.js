@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function(){
   // Slider logic (same as before)
   const slides = Array.from(document.querySelectorAll('.slide'));
@@ -101,4 +100,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
